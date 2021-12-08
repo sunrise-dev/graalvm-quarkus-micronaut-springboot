@@ -8,13 +8,11 @@
         <version>2.6.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-
     <groupId>com.mycompany</groupId>
     <artifactId>springboot-simple-api</artifactId>
     <version>1.0.0</version>
     <name>springboot-simple-api</name>
     <description>Demo project for Spring Boot</description>
-
     <properties>
         <java.version>11</java.version>
         <repackage.classifier/>
@@ -22,7 +20,6 @@
         <jib-maven-plugin.version>3.1.4</jib-maven-plugin.version>
         <docker-image.prefix>ivanfranchin</docker-image.prefix>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -41,7 +38,6 @@
             <artifactId>spring-native</artifactId>
             <version>${spring-native.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -53,7 +49,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -105,7 +100,6 @@
             </plugin>
         </plugins>
     </build>
-
     <repositories>
         <repository>
             <id>spring-milestones</id>
@@ -116,7 +110,6 @@
             </snapshots>
         </repository>
     </repositories>
-
     <pluginRepositories>
         <pluginRepository>
             <id>spring-milestones</id>
@@ -127,7 +120,6 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-
     <profiles>
         <profile>
             <id>native</id>
@@ -170,5 +162,4 @@
             </build>
         </profile>
     </profiles>
-
 </project>
